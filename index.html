@@ -318,6 +318,7 @@ function addDataToFirestore(name, food, email,address,latitude,longitude,mobile)
       console.log("Document written with ID: ", docRef.id);
       // Optionally, reset the form after successful submission
       document.getElementById('listings').reset();
+	    alert("Listing added to database , reload to see changes");
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
